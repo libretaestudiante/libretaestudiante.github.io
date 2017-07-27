@@ -13,7 +13,7 @@ img{
 
 body{
     font-family: 'Roboto', sans-serif;
-    margin: 0; /*elimina bordes asignados por el navegador por defecto*/
+    margin: 0; /* elimina bordes asignados por el navegador por defecto */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     width: 98%;
 }
-/* ----------------------------estilos para header---------------------------- */
+/* ---------------------------- estilos para header ---------------------------- */
 
 .header {
     height: 60px;
@@ -98,24 +98,27 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: -1000;
     margin-bottom: 25px;
+    background: rgba(0,0,0,0.6);
 }
 
 .banner .contenedor{
     position: absolute;
-    top: 40%;
+    top: 45%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 100%;
-    color: #0078D7;
+    color: #fff;
     text-align: center;
+    background: rgba(0,0,0,0.6);
 }
 
 .banner__txt{
     display: none;
+    
 }
 
 
-/* ------------------ estilo de paneles de info------------------ */
+/* ------------------ estilo de paneles de info ------------------ */
 .info__columna{
     background: #0078D7;
     color: black;
@@ -166,7 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------------------- responsive ------------------------------- */
 
-@media(min-width:480px){/* tamaño celularres */
+@media(min-width:480px){/* tamaño celulares */
     /* valor con el que empiezan a cambiar los elementos de posición */
     .logo {
         font-size: 40px;
@@ -244,7 +247,6 @@ h1, h2, h3, h4, h5, h6 {
     }
     .menu{
         display: flex;
-        border-radius: 5px;
     }
     .icon-menu{
         display: none;
@@ -252,12 +254,10 @@ h1, h2, h3, h4, h5, h6 {
     .menu__link{
         background: none;
         font-size: 20px;
-        border-radius: 5px;
     }
     .select{
         background: #0078D7;
         color: #fff;
-        border-radius: 5px;
     }
     
     .banner__titulo{
@@ -290,9 +290,6 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 17px;
     }
 }
-
-
-
 
 
 
