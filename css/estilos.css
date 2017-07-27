@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: -1000;
     margin-bottom: 25px;
-    background: rgba(0,0,0,0.6);
+   
 }
 
 .banner .contenedor{
@@ -109,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     color: #fff;
     text-align: center;
-    background: rgba(0,0,0,0.6);
+
 }
 
 .banner__txt{
@@ -174,8 +174,12 @@ h1, h2, h3, h4, h5, h6 {
     .logo {
         font-size: 40px;
     }
+
+    .banner__contenedor{
+        top: 50%;
+    }
     .banner__titulo{
-        font-size: 30px;
+        font-size: 25px;
         margin: 5px 0;
     }
     .banner__txt{
@@ -247,6 +251,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .menu{
         display: flex;
+        border-radius: 5px;
     }
     .icon-menu{
         display: none;
@@ -254,12 +259,19 @@ h1, h2, h3, h4, h5, h6 {
     .menu__link{
         background: none;
         font-size: 20px;
+        border-radius: 5px;
     }
     .select{
         background: #0078D7;
         color: #fff;
+        border-radius: 5px;
     }
-    
+    .banner{
+         background: rgba(0,0,0,0.6);
+    }
+    .banner__contenedor{
+        background: rgba(0,0,0,0.6);
+    }
     .banner__titulo{
         font-size: 60px;
     }    
