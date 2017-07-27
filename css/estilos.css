@@ -244,6 +244,7 @@ h1, h2, h3, h4, h5, h6 {
     }
     .menu{
         display: flex;
+        border-radius: 5px;
     }
     .icon-menu{
         display: none;
@@ -251,10 +252,12 @@ h1, h2, h3, h4, h5, h6 {
     .menu__link{
         background: none;
         font-size: 20px;
+        border-radius: 5px;
     }
     .select{
         background: #0078D7;
         color: #fff;
+        border-radius: 5px;
     }
     
     .banner__titulo{
