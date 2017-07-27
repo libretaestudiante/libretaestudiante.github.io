@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Libreta del estudiante - Alpha</title>
+        <!-- meta para que la página sea responsiva -->
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    
+<link rel="stylesheet" href="css/font.css">
+    </head>
+    
+    <body>
+        <header class="header">
+           <div class="contenedor">
+             <h1 class="logo">Libreta virtual</h1>
+             <span class="icon-menu" id="btn-menu"></span>  <!-- vinculado a js con var btnMenu -->
+             <nav class="nav" id="nav">
+                 <ul class="menu">
+                     <li class="menu__item"><a class="menu__link select" href="">Inicio</a></li>
+                     <li class="menu__item"><a class="menu__link" href="">Descargas</a></li>
+                     <li class="menu__item"><a class="menu__link" href="">Regístrate</a></li>
+                     <li class="menu__item"><a class="menu__link" href="">Información</a></li>
+                 </ul> 
+             </nav>
+        </div>
+        </header>
+        <div class="banner">
+            <img src="img/banner.jpg" alt="" class="banner__img">
+            <div class="contenedor">
+                <h2 class="banner__titulo">Una nueva forma de comunicación docente - alumno</h2>
+                <p class="banner__txt">Pruebalo ahora de manera gratuita</p>
+            </div>
+        </div>
+        <main class="main">
+            <div class="contenedor">
+                <section class="info">
+                    <article class="info__columna">
+                        <img src="img/img1.jpg" alt="" class="info__img">
+                        <h2 class="info__titulo">Versátil</h2>
+                        <p class="info__txt">Puede ser utilizado en muchos ambitos debido a su gran versatilidad.</p>
+                    </article>
+                    <article class="info__columna">
+                        <img src="img/img2.jpg" alt="" class="info__img">
+                        <h2 class="info__titulo">Potente</h2>
+                        <p class="info__txt">Permite una gran cantidad de usuarios al mismo tiempo sin interferir en el rendimiento.</p>
+                    </article>
+                    <article class="info__columna">
+                        <img src="img/img3.jpg" alt="" class="info__img">
+                        <h2 class="info__titulo">Comunicación fluida, como nunca antes</h2>
+                        <p class="info__txt">Permite que los docentes y alumnos tengan una comunicación estrecha y puedan ver sus calificaciones en tiempo real.</p>
+                    </article>
+                </section>
+                <section class="uso">
+                    <h2 class="section__titulo"> Es muy fácil de usar </h2>
+                    <div class="uso__columna">
+                        <img src="img/profesor.jpg" alt="" class="uso__img">
+                        <div class="uso__descripcion">
+                            <h3 class="uso__titulo">Descarga</h3>
+                            <p class="uso__txt">Ve a nuestra sección de descargas.</p>
+                        </div>
+                    </div>
+                    <div class="uso__columna">
+                        <img src="img/profesor.jpg" alt="" class="uso__img">
+                        <div class="uso__descripcion">
+                            <h3 class="uso__titulo">Inicia</h3>
+                            <p class="uso__txt">No requiere instalación, solo ejecuta el jar.</p>
+                        </div>
+                    </div>
+                    <div class="uso__columna">
+                        <img src="img/profesor.jpg" alt="" class="uso__img">
+                        <div class="uso__descripcion">
+                            <h3 class="uso__titulo">Disfruta</h3>
+                            <p class="uso__txt">Regístrate y comienza la aventura.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <p class="copy">&copy; Matías Sosa - Santiago Pintos 2017, todos los derechos reservados.</p>
+        </footer>
+        
+        <script src="js/menu.js"></script>
+    </body>
+</html>

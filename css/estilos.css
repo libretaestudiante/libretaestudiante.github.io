@@ -1,0 +1,310 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arimo|Roboto');
+
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /*elimina bordes asignados por el navegador por defecto*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 98%;
+}
+/* ----------------------------estilos para header---------------------------- */
+
+.header {
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+.logo{
+    color: #0078D7;
+}
+
+.icon-menu{
+    display: block;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0078D7;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: auto; /* para que el menu se ajuste bien en mozilla */
+    cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
+}
+
+/*-------------------------- estilos para el menu --------------------------*/
+
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%; /*para transición*/
+    width: 100%;
+    transition: all 0.4s; /* velocidad de la transicion, en pruebas */
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link { /* etiquetas "a" */
+    display: block;
+    padding: 15px;
+    background: #0078D7;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link:hover , .select { /* evento al pasar el mouse */
+    background: #fff;
+    color: #0078D7;
+}
+.mostrar{
+    left: 0;
+}
+
+/* ----------------------- estilo banner ----------------------- */
+
+.banner{
+    margin-top: -60px;  /* 60px ancho del head */
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 25px;
+}
+
+.banner .contenedor{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #0078D7;
+    text-align: center;
+}
+
+.banner__txt{
+    display: none;
+}
+
+
+/* ------------------ estilo de paneles de info------------------ */
+.info__columna{
+    background: #0078D7;
+    color: black;
+    padding: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* ------------------------ estilos de uso ------------------------ */
+
+.section__titulo{
+    text-align: center;
+    font-size: 30px;
+    color: #0078D7;
+}
+
+.uso__columna{
+    position: relative;
+    margin-bottom: 50px;
+    
+}
+
+.uso__descripcion{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    width: 80%;
+    height: 100%;
+    padding: 5px;
+}
+
+.uso__titulo{
+    font-size: 25px;
+    margin: 5px;
+}
+
+
+/* --------------------------- estilo del footer --------------------------- */
+
+.footer{
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* ------------------------------- responsive ------------------------------- */
+
+@media(min-width:480px){/* tamaño celularres */
+    /* valor con el que empiezan a cambiar los elementos de posición */
+    .logo {
+        font-size: 40px;
+    }
+    .banner__titulo{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .banner__txt{
+        display: block;
+        font-size: 20px;
+        margin: 7px;
+    }
+    .info, .uso{
+        display: flex;
+        justify-content: space-between;
+    }
+    .info__columna{
+        width: 32%;
+        margin-top: -95px;
+    }
+    .info__titulo{
+        font-size: 30px;
+        margin: 10px 0;
+    }
+    .uso{
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .section__titulo{
+        width: 100%;
+    }
+    .uso__columna{
+        width: 32%;
+    }
+    .uso__titulo{
+        font-size: 25px;
+        text-align: center;
+    }
+    .uso__descripcion{
+        font-size: 19px;
+    }
+}
+@media(min-width:768px){  /* tamaño tablet */
+    .banner__titulo{
+        font-size: 50px;
+    }    
+    .banner__txt{
+        font-size: 35px;
+    }
+    .info__columna{
+        margin-top: -130px;
+    }
+    .section__titulo{
+        font-size: 40px;
+    }
+    .uso__titulo{
+        font-size: 30px;
+    }
+    .uso__descripcion{
+        font-size: 22px;
+    }
+    .footer{
+        font-size: 17px;
+    }
+}
+
+@media(min-width:1024px){ /* tamaño escritorio */
+    .contenedor{
+        width: 85%;
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+    }
+    .select{
+        background: #0078D7;
+        color: #fff;
+    }
+    
+    .banner__titulo{
+        font-size: 60px;
+    }    
+    .banner__txt{
+        font-size: 40px;
+    }
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    .info__txt{
+        text-align: center;
+    }
+    .info__columna{
+        margin-top: -190px;
+    }
+    .section__titulo{
+        font-size: 50px;
+        margin: 20px 0;
+    }
+    .uso__titulo{
+        font-size: 45px;
+    }
+    .uso__descripcion{
+        font-size: 30px;
+    }
+    .footer{
+        font-size: 17px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
