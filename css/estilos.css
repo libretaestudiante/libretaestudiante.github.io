@@ -226,7 +226,8 @@ h1, h2, h3, h4, h5, h6 {
     }
     .info__columna{
         margin-top: -130px;
-    85    .section__titulo{
+    }
+    .section__titulo{
         font-size: 40px;
     }
     .uso__titulo{
@@ -242,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:1024px){ /* tamaño escritorio */
     .contenedor{
-        width: 99%;
+        width: 85%;
     }
     .nav{
         position: static;
