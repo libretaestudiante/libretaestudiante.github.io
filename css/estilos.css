@@ -98,8 +98,8 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: -1000;
     margin-bottom: 25px;
-   
 }
+
 
 .banner .contenedor{
     position: absolute;
@@ -179,7 +179,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 50%;
     }
     .banner__titulo{
-        font-size: 25px;
+        font-size: 20px;
         margin: 5px 0;
     }
     .banner__txt{
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:1024px){ /* tamaño escritorio */
     .contenedor{
-        width: 85%;
+        width: 99%;
     }
     .nav{
         position: static;
@@ -265,13 +265,7 @@ h1, h2, h3, h4, h5, h6 {
         background: #0078D7;
         color: #fff;
         border-radius: 5px;
-    }
-    .banner{
-         background: rgba(0,0,0,0.6);
-    }
-    .banner__contenedor{
-        background: rgba(0,0,0,0.6);
-    }
+    }w
     .banner__titulo{
         font-size: 60px;
     }    
