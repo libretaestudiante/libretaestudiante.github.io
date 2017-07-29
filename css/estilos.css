@@ -83,7 +83,7 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
-.menu__link:hover , .select { /* evento al pasar el mouse */
+.menu__link: hover , .select { /* evento al pasar el mouse */
     background: #fff;
     color: #0078D7;
 }
@@ -217,6 +217,7 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 19px;
     }
 }
+
 @media(min-width:768px){  /* tamaño tablet */
     .banner__titulo{
         font-size: 50px;
