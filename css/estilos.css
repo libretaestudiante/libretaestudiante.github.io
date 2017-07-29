@@ -23,7 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .contenedor{
     margin: auto;
-    width: 98%;
+    width: 99%;
 }
 /* ---------------------------- estilos para header ---------------------------- */
 
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media(min-width:1024px){ /* tamaño escritorio */
     .contenedor{
-        width: 85%;
+        width: 98%;
     }
     .nav{
         position: static;
