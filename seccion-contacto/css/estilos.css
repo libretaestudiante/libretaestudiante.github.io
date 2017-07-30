@@ -1,0 +1,192 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arimo|Roboto');
+
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* elimina bordes asignados por el navegador por defecto */
+    background-image: url(../img/soporte.jpg);
+    background-size: 100vw 100vh; /* vw width, vh view high*/
+    background-attachment: fixed; /* impide que la imagen se mueva si se crea scroll al redimensionar */
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+
+/* ------- estilo header ------- */
+.header {
+    height: 55px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0078D7;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: auto; /* para que el menu se ajuste bien en mozilla */
+    cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
+}
+
+/* ------------- menu ------------- */
+
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;   
+    width: 100%;
+    transition: all 0.4s; /* velocidad de la transicion */
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #0078D7;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link: hover , .select{ /* evento al pasar el mouse */
+    background: #fff;
+    color: #0078D7;
+}
+
+.mostrar{
+    left: 0;
+}
+
+/* ------------------------ banner ------------------------ */
+
+.banner{
+    margin-top: -60px;  /* 60px ancho del head */
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 25px;
+}
+
+/* -------------- formulario -------------- */
+form{
+    width: 450px;
+    margin: auto;
+    margin-top: 15%;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+}
+textarea{
+    min-height: 100px;
+    max-height: 220px;
+    max-width: 100%;
+    min-width: 100%;
+}
+#boton{
+    background: #0078D7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px;
+}
+#boton:hover{
+    background: #fff;
+    color: #0078D7;
+    cursor: pointer;
+}
+
+@media(min-width:480px){/* tamaño celulares */
+    .logo {
+        font-size: 40px;
+    }
+}
+@media(max-width:480px){ /* utilizo max-width porque min crea conflictos */
+        form{
+        width: 100%
+    }
+}
+
+@media(min-width:768px){
+    /* tamaño tablet */
+
+@media(min-width:1024px){
+    /* tamaño escritorio */
+     .contenedor{
+        width: 98%;
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+        border-radius: 5px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .select{
+        background: #0078D7;
+        color: #fff;
+        border-radius: 5px;
+    }
+    
+}
+
+
+
