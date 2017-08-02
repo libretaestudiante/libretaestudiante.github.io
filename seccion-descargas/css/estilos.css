@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Roboto');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* elimina bordes asignados por el navegador por defecto */
+}
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+
+/* ------- estilo header ------- */
+.header {
+    height: 55px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu{
+    margin: 5px;
+}
+.logo{
+    color: #0078D7;
+}
+
+.icon-menu{
+    display: block;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0078D7;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: auto; /* para que el menu se ajuste bien en mozilla */
+    cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
+}
+
+/* ------------- menu ------------- */
+
+.nav{
+    position: absolute;
+    top: 60px;
+    left: -100%;   
+    width: 100%;
+    transition: all 0.4s; /* velocidad de la transicion */
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link{
+    display: block;
+    padding: 15px;
+    background: #0078D7;
+    text-decoration: none;
+    color: #fff;
+}
+.menu__link: hover , .select{ /* evento al pasar el mouse */
+    background: #fff;
+    color: #0078D7;
+}
+
+.mostrar{
+    left: 0;
+}
+
+/* ------------- boton de descarga ------------- */
+form{
+    height: 450px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.descarga{
+    text-decoration: none; 
+    background: #0078D7;
+    color: #fff;
+    border-radius: 5px;
+    padding: 9px;
+    margin-left: 45%;
+}
+.descarga:hover{
+    background: #fff;
+    color: #0078D7;
+    cursor: pointer;
+}
+
+
+
+@media(min-width:480px){/* tamaño celulares */
+    .logo {
+        font-size: 40px;
+    }
+    form{
+        margin-top: 15%;
+        width: 100%;
+    }
+    .boton{
+     margin-top: 5%;
+    }
+}
+
+@media(min-width:768px){
+    form{
+        width: 80%;
+        height: 550px;
+        margin-top: 5%;
+    }
+    .boton{
+       margin-top: 2%;
+    }
+}
+
+@media(min-width:1024px){
+    /* tamaño escritorio */
+    form{
+        width: 800px;
+        margin-top: 6%;
+        height: 550px;
+    }
+    .contenedor{
+        width: 98%;
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+        border-radius: 5px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .select{
+        background: #0078D7;
+        color: #fff;
+        border-radius: 5px;
+    }
+    .boton{
+    margin-top: 2.5%;
+    }
+    .descarga{
+    width: 50%;
+    
+
+    }
+}
