@@ -40,7 +40,7 @@ body{
     line-height: 50px;
     border-radius: 5px;
     margin: 5px;
-    margin-left: auto; /* para que el menu se ajuste bien en mozilla */
+    margin-left: auto; /* Ajusta el menú correctamente > Solo para Mozilla */
     cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
 }
 
@@ -105,7 +105,7 @@ h2{
     cursor: pointer;
 }
 
-
+/* ----------------------------------------------------------- Responsive ----------------------------------------------------------- */
 
 @media(min-width:480px){/* tamaño celulares */
     .logo {
@@ -162,6 +162,7 @@ h2{
         color: #fff;
         border-radius: 5px;
     }
+    
     .boton{
     margin-top: 2.5%;
     }
