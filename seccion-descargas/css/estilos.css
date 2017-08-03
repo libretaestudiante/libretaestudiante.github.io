@@ -5,6 +5,8 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0; /* elimina bordes asignados por el navegador por defecto */
+    background-image: url(../prueba.png);
+    background-size: 100vw 100vh;
 }
 .contenedor{
     margin: auto;
@@ -26,7 +28,7 @@ body{
     margin: 5px;
 }
 .logo{
-    color: #0078D7;
+    color: #fff;
 }
 
 .icon-menu{
