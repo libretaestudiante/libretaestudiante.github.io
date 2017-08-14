@@ -77,9 +77,16 @@ body{
     left: 0;
 }
 
+/*  Detección de SO  */
+.SO{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    padding: 15px;
+}
 /* ------------- boton de descarga ------------- */
 form{
-    height: 450px;
+    height: 550px;
     margin: auto;
     background: rgba(0,0,0,0.6);
     padding: 10px 20px;
@@ -90,7 +97,7 @@ h2{
     color: #fff;
     text-align: center;
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
     margin-bottom: 15px;
 }
 .descarga{
@@ -109,31 +116,32 @@ h2{
 
 /* ----------------------------------------------------------- Responsive ----------------------------------------------------------- */
 
-@media(min-width:480px){/* tamaño celulares */
+@media(max-width:480px){/* tamaño celulares */
     .logo {
         font-size: 40px;
     }
     form{
         margin-top: 15%;
         width: 100%;
+        height: 380px;
         z-index: -1000;   
     }
-    .video{
-        z-index: 0;
+    .SO{
+     display: none;   
     }
     .boton{
-     margin-top: 5%;
+     margin-top: 15%;
     }
 }
 
-@media(min-width:768px){
+@media(min-width:768px){ /* --- tamaño tablets --- */ 
     form{
         width: 80%;
         height: 550px;
         margin-top: 5%;
     }
     .boton{
-       margin-top: 2%;
+       margin-boton: 10%;
     }
 }
 
@@ -142,7 +150,7 @@ h2{
     form{
         width: 800px;
         margin-top: 6%;
-        height: 550px;
+        height: 630px;
     }
     .contenedor{
         width: 98%;

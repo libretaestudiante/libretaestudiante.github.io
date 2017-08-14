@@ -25,7 +25,31 @@
         </header>  
         <form  method="post" >
             <h2>Descarga nuestro software de manera gratuita</h2>
-            <use "php/SO.php"> <?php echo $SO ?> </use>
+      
+     <div class="SO">  <!-- reservado para detección de SO -->
+        <script language=JavaScript> 
+            function checkOS() { 
+                if (navigator.appVersion.indexOf("NT") !=-1) 
+                { var OpSys= "Windows"; } 
+                else if(navigator.appVersion.indexOf("SunOS") !=-1) 
+                { var OpSys = "SunOS"; } 
+                else if(navigator.appVersion.indexOf("Linux") !=-1) 
+                { var OpSys = "Linux"; } 
+                else if(navigator.userAgent.indexOf('Android') != -1) 
+                { var OpSys = "Android"; }
+                else if(navigator.userAgent.indexOf('Mac') != -1) 
+                { var OpSys = "MacOS"; } 
+                else if(navigator.userAgent.indexOf('iOS') != -1) 
+                { var OpSys = "iOS"; } 
+                else if(navigator.appName=="WebTV Internet Terminal") 
+                { var OpSys="WebTV"; } 
+                else { var OpSys = "other"; } 
+                    return OpSys; 
+                            } 
+            var OpSys = checkOS(); 
+            document.write("Usted está ingresando desde "+OpSys+" aquí tiene el archivo correspondiente a su SO"); 
+         </script>
+    </div>   
             <div class="video" style="position:relative; height:150px; padding-bottom:56.25%">
             <iframe src="https://www.youtube.com/embed/pNHrH5HeFWY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute; margin-top: 0%; ; width:100%; height:100%; left:0" allowfullscreen>
             </iframe>
