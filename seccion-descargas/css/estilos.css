@@ -116,6 +116,10 @@ h2{
     form{
         margin-top: 15%;
         width: 100%;
+        z-index: -1000;   
+    }
+    .video{
+        z-index: 0;
     }
     .boton{
      margin-top: 5%;
@@ -134,7 +138,7 @@ h2{
 }
 
 @media(min-width:1024px){
-    /* tamaño escritorio */
+    /*------------ tamaño escritorio ------------*/
     form{
         width: 800px;
         margin-top: 6%;
