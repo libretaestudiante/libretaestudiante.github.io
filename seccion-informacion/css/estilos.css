@@ -1,0 +1,180 @@
+
+@import url('https://fonts.googleapis.com/css?family=Arimo|Roboto');
+
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; /* elimina bordes asignados por el navegador por defecto */
+    background-image: url("../info.jpg");
+    background-size: 100vw 100vh; /* vw width, vh view high*/
+    /*  en prueba >> background-attachment: fixed; <<  impide que la imagen se mueva si se crea scroll al redimensionar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arimo', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.contenedor{
+    margin: auto;
+    width: 99%;
+}
+/* ---------------------------- estilos para header ---------------------------- */
+
+.header {
+    height: 60px;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo, .icon-menu {
+    margin: 5px;
+    color: #fff;
+}
+.logo{
+    color: #fff;
+}
+
+.icon-menu{
+    display: block;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    background: #0078D7;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    margin: 5px;
+    margin-left: auto; /* para que el menu se ajuste bien en mozilla */
+    cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
+}
+/*-------------------------- estilos para el menu --------------------------*/
+
+.nav {
+    position: absolute;
+    top: 60px;
+    left: -100%; /*para transición*/
+    width: 100%;
+    transition: all 0.4s; /* velocidad de la transicion, en pruebas */
+}
+
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__link { /* etiquetas "a" */
+    display: block;
+    padding: 15px;
+    background: #0078D7;
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu__link: hover , .select { /* evento al pasar el mouse */
+    background: #fff;
+    color: #0078D7;
+}
+.mostrar{
+    left: 0;
+}
+
+/* ventana de info */
+form{
+    height: 550px;
+    margin: auto;
+    background: rgba(0,0,0,0.6);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+/* ------------------------------- responsive ------------------------------- */
+
+@media(min-width:480px){/* tamaño celulares */
+    /* valor con el que empiezan a cambiar los elementos de posición */
+    .logo {
+        font-size: 40px;
+    } 
+    
+    form{
+        margin-top: 15%;
+        width: 100%;
+        height: 380px;
+        z-index: -1000;   
+    }
+    h2{
+        font-size: 20px;
+    }
+}
+
+@media(min-width:768px){ /* --- tamaño tablets --- */ 
+    form{
+        width: 80%;
+        height: 550px;
+        margin-top: 5%;
+    }
+    h2{
+        font-size: 25px;
+    }
+}
+    
+    @media(min-width:1024px){ /* tamaño escritorio */
+    .contenedor{
+        width: 98%;
+    }
+    .nav{
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+        border-radius: 5px;
+    }
+    .icon-menu{
+        display: none;
+    }
+    .menu__link{
+        background: none;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+    .select{
+        background: #0078D7;
+        color: #fff;
+        border-radius: 5px;
+    }
+        form{
+        width: 800px;
+        margin-top: 2%;
+        height: 630px;
+    }
+        h2{
+            font-size: 35px;
+        }
+        h3{
+            text-align: center;
+            color: #fff;
+            font-size: 25px;
+        }
+}
