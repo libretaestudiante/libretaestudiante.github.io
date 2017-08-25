@@ -32,6 +32,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
     height: 60px;
+    background-color: rgba(0,0,0,0.4);
 }
 
 .header .contenedor{
@@ -59,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 5px;
     margin: 5px;
     margin-left: auto; /* para que el menu se ajuste bien en mozilla */
-    cursor: pointer; /* hace aparecer "manito" al pasar el mouse*/
+    cursor: pointer; /* evento del mouse*/
 }
 /*-------------------------- estilos para el menu --------------------------*/
 
@@ -97,10 +98,10 @@ h1, h2, h3, h4, h5, h6 {
 form{
     height: 550px;
     margin: auto;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0,0,0,0.8);
     padding: 10px 20px;
     box-sizing: border-box;
-    border-radius: 8px;
+    border-radius: 5px;
 }
 h2{
     color: #fff;
@@ -108,23 +109,30 @@ h2{
     margin: 0;
     margin-bottom: 15px;
 }
+h3{
+    color: #ffffff;
+    text-align: center;
+}
 
 /* ------------------------------- responsive ------------------------------- */
 
 @media(min-width:480px){/* tamaño celulares */
-    /* valor con el que empiezan a cambiar los elementos de posición */
     .logo {
         font-size: 40px;
     } 
     
     form{
         margin-top: 15%;
-        width: 100%;
+        width: 98%;
         height: 380px;
         z-index: -1000;   
     }
     h2{
-        font-size: 20px;
+        font-size: 25px;
+        color: #ffffff;
+    }
+    h3{
+        font-size: 15px;
     }
 }
 
@@ -135,7 +143,10 @@ h2{
         margin-top: 5%;
     }
     h2{
-        font-size: 25px;
+        font-size: 30px;
+    }
+    h3{
+        font-size: 20px;
     }
 }
     
@@ -165,16 +176,15 @@ h2{
         border-radius: 5px;
     }
         form{
-        width: 800px;
+        width: 1000px;
         margin-top: 2%;
         height: 630px;
     }
         h2{
-            font-size: 35px;
+            margin-top: 2%;
+            font-size: 45px;    
         }
         h3{
-            text-align: center;
-            color: #fff;
             font-size: 25px;
         }
 }
