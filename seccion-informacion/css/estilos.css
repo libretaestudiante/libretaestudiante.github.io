@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 60px;
     left: -100%; /*para transición*/
     width: 100%;
-    transition: all 0.4s; /* velocidad de la transicion, en pruebas */
+    transition: all 0.4s; /* velocidad de la transicion */
 }
 
 .menu{
@@ -129,7 +129,6 @@ h3{
     }
     h2{
         font-size: 25px;
-        color: #ffffff;
     }
     h3{
         font-size: 15px;
