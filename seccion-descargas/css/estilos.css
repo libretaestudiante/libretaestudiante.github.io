@@ -108,6 +108,9 @@ h2{
     padding: 9px;
     margin-left: 45%;
 }
+.video{
+z-index: -1000; 
+}
 .descarga:hover{
     background: #fff;
     color: #0078D7;
@@ -124,7 +127,7 @@ h2{
         margin-top: 15%;
         width: 100%;
         height: 380px;
-        z-index: -1000;   
+          
     }
     .SO{
      display: none;   
