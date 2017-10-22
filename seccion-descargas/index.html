@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Descargas - Libreta del estudiante</title>
+    <title>Descargas - Libreta Virtual - Beta</title>
      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"> <!-- activa responsive --> 
          <link rel="stylesheet" href="css/estilos.css">
         <link rel="stylesheet" href="../css/font.css">  
@@ -16,7 +16,7 @@
                  <ul class="menu">
                      <li class="menu__item"><a class="menu__link" href="../index.html">Inicio</a></li>
                      <li class="menu__item"><a class="menu__link select" href="">Descargas</a></li>
-                     <li class="menu__item"><a class="menu__link" href="">Regístrate</a></li>
+                  <!--   <li class="menu__item"><a class="menu__link" href="">Regístrate</a></li> -->
                      <li class="menu__item"><a class="menu__link" href="../seccion-informacion/index.html">Información</a></li>
                      <li class="menu__item"><a class="menu__link" href="../seccion-contacto/index.html">Soporte</a></li>
                  </ul> 
@@ -26,37 +26,36 @@
         <main class="main">
         <div>
         <form  method="post" >
-            <h2>Descarga nuestro software de manera gratuita</h2>
+            <h2>Descarga nuestra software (beta) de manera gratuita</h2>
      <div class="SO">  <!-- detección de SO -->
            <script language=JavaScript> 
             function checkOS() { 
             if (navigator.appVersion.indexOf("NT") !=-1) 
-                {// var OpSys= "Windows"; 
+                {
                     document.write("Parece que estás corriendo Windows, aquí tenemos una versión para tu SO: ")
                 } 
             else if(navigator.appVersion.indexOf("SunOS") !=-1) 
-                { //var OpSys = "SunOS"; 
+                {
                     document.write("Parece que estás corriendo SunOS, aquí tenemos una versión para ti: ")
                 } 
             else if(navigator.appVersion.indexOf("Linux") !=-1) 
-                { //var OpSys = "Linux/Android"; 
+                {
                     document.write("¿Estás corriendo Linux? Aquí tenemos una versión para ti! ¿Android? Espera, pronto tendremos algo para tu sistema :) ")
                 } 
             else if(navigator.userAgent.indexOf('Mac') != -1) 
-                { //var OpSys = "MacOS/iOS";
+                {
                     document.write("¿Usuario de MacOS? Comienza la descarga! ¿Te conectas desde un iPhone? Aún no tenemos nada para ti :( ")
                 } 
             else if(navigator.appName=="WebTV Internet Terminal") 
-                {// var OpSys="WebTV"; 
+                {
                     document.write("WebTV no está en la lista de SO soportados por nuestra plataforna :( ")
                 } 
-            else {// var OpSys = "other"; 
+            else {
                     document.write("Algo salió mal, no podemos reconocer tu sistema operativo :( ")
                  } 
              return OpSys; 
                               } 
                 var OpSys = checkOS(); 
-              //  document.write("Parece que estás corriendo "+OpSys+" aquí tenemos la versión para su SO:");  
             </script>
     </div>   
             <div class="video" style="position:relative; height:150px; padding-bottom:56.25%">
