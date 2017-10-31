@@ -29,6 +29,9 @@
             <h2>Descarga nuestra software (beta) de manera gratuita</h2>
      <div class="SO">  <!-- detección de SO -->
            <script language=JavaScript> 
+		   
+		   var navegador, UsrAg = navigator.userAgent;
+
             function checkOS() { 
             if (navigator.appVersion.indexOf("NT") !=-1) 
                 {
@@ -49,7 +52,11 @@
             else if(navigator.appName=="WebTV Internet Terminal") 
                 {
                     document.write("WebTV no está en la lista de SO soportados por nuestra plataforna :( ")
-                } 
+                }
+			else if (UsrAg.indexOf("Firefox") > -1){
+				navegador = "Mozilla Firefox";
+				document.write("Parece que estás usando Mozilla Firefox, debido a ello puede que tengamos problemas para identificar tu sistema operativo :(")
+			}
             else {
                     document.write("Algo salió mal, no podemos reconocer tu sistema operativo :( ")
                  } 
