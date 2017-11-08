@@ -14,7 +14,7 @@ img{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0; /* elimina bordes asignados por el navegador por defecto */
-    background-image: url("../info.jpg");
+    background-image: url("../info-2.jpg"); /* enlace: https://pixabay.com/es/ipad-comprimido-tecnolog%C3%ADa-contacto-820272/ */
     background-size: 100vw 100vh; /* vw width, vh view high*/
     /*  en prueba >> background-attachment: fixed; <<  impide que la imagen se mueva si se crea scroll al redimensionar */
 }

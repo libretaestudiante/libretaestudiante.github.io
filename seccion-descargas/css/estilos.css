@@ -5,7 +5,7 @@
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0; /* elimina bordes asignados por el navegador por defecto */
-    background-image: url(../prueba.png);
+    background-image: url(../fondo-descargas.jpg); /* enlace img: https://pixabay.com/es/red-servidor-sistema-2402637/ */
     background-size: 100vw 100vh;
 }
 .contenedor{

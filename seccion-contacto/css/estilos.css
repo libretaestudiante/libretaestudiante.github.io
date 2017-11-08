@@ -14,7 +14,7 @@ img{
 body{
     font-family: 'Roboto', sans-serif;
     margin: 0; /* elimina bordes asignados por el navegador por defecto */
-    background-image: url(../img/soporte.jpg);
+    background-image: url(../img/soporte.jpg); /* enlace: https://pixabay.com/es/empresaria-consultor%C3%ADa-negocios-2817567/  */
     background-size: 100vw 100vh; /* vw width, vh view high*/
     background-attachment: fixed; /* impide que la imagen se mueva si se crea scroll al redimensionar */
 }
